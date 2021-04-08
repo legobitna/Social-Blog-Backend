@@ -17,7 +17,7 @@ const data = {
   //Specify email data
   from: FROM_EMAIL,
   //The email to contact
-  to: "minhdh@coderschool.vn",
+  to: "bitna@coderschool.vn",
   //Subject and text data
   subject: "Hello from Mailgun",
   html: "<h4>Welcome to the social blog app</h4>",

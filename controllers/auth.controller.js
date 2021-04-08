@@ -32,7 +32,6 @@ authController.loginWithEmail = catchAsync(async (req, res, next) => {
 });
 
 authController.loginWithFacebookOrGoogle = catchAsync(
-  // 이거 전체 로직질문
   async (req, res, next) => {
     let profile = req.user;
     console.log("authController", profile);

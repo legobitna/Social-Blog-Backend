@@ -40,7 +40,7 @@ mongoose
   })
   .then(() => {
     console.log(`Mongoose connected to ${mongoURI}`);
-    // require("./testing/testSchema");
+
     emailInternalHelper.createTemplatesIfNotExists();
   })
   .catch((err) => console.log(err));
@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /* Initialize Routes */
 app.use("/api", indexRouter);
 
-// catch 404 and forard to error handler
+// catch 404 and foward to error handler
 app.use((req, res, next) => {
   const err = new Error("Not Found");
   err.statusCode = 404;
